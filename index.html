@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>D-Disel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <a href="/"
+            ><img
+              class="header__logo"
+              src="./src/images/header-logo.webp"
+              alt="logo"
+          /></a>
+          <div class="header__links">
+            <nav class="header__nav">
+              <a
+                class="header__link link"
+                href="/"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Запчасти
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Detroit</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Поршни</a></li>
+                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Cummins</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Фильтры</a></li>
+                    <li><a class="dropdown-item" href="#">Насосы</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">BOSCH</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Электроника</a></li>
+                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">DELPHI</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Рейлы</a></li>
+                    <li><a class="dropdown-item" href="#">Датчики</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#"
+                    >Caterpillar</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Головки</a></li>
+                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Акции</a>
+                </li>
+              </ul>
+              <a href="/" class="header__link link">Новости</a>
+              <a
+                class="header__link link"
+                href="/"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ремонт насос-форсунок
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Договор</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Инструкции</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ремонт</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Сервис</a>
+                </li>
+              </ul>
+              <a href="/" class="header__link link">Контакты</a>
+            </nav>
+            <form class="header__form">
+              <img
+                class="header__form-icon"
+                src="./src/icons/glass.svg"
+                alt="header-glass"
+              />
+              <input
+                class="header__input"
+                type="text"
+                placeholder="Введите номер двигателя, номер форсунки или номер детали"
+              />
+              <a href="/" class="header__form-button">Найти</a>
+            </form>
+          </div>
+          <div class="header__item">
+            <div class="header__contacts">
+              <a
+                class="header__contact link"
+                href="https://wa.me/79117232133"
+                target="_blank"
+              >
+                <img
+                  width="20px"
+                  height="20px"
+                  src="./src/icons/whatsapp.svg"
+                  alt="header__tel"
+                />
+                <p>+7 (911) 723 21 33</p></a
+              >
+              <a
+                class="header__contact link"
+                href="https://wa.me/79117232133"
+                target="_blank"
+              >
+                <img
+                  width="20px"
+                  height="20px"
+                  src="./src/icons/whatsapp.svg"
+                  alt="header__tel"
+                />
+                <p>+7 (911) 723 21 33</p></a
+              >
+            </div>
+            <div class="header__panels">
+              <a class="header__panels-link link" href="/">
+                <img
+                  width="18px"
+                  height="19px"
+                  src="./src/icons/login.svg"
+                  alt="header__login"
+                />
+                <p>Войти</p>
+              </a>
+              <a class="header__panels-link link" href="/">
+                <img
+                  width="20px"
+                  height="20px"
+                  src="./src/icons/cart.svg"
+                  alt="header__cart"
+                />
+                <p>Корзина</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about__info">
+            <h1 class="about__title">О компании D-Diesel</h1>
+            <p>
+              Компания D-Diesel осуществляет продажу запчастей на
+              насос-форсунки, ремонт насос-форсунок в Санкт-Петербурге,
+              выполняет диагностику топливной системы, реализует комплектующие
+              для большегрузной техники американских и европейских марок:
+              Freightliner, International, Kenworth, Mack, Caterpillar,
+              Mercedes, Volvo, Renault, DAF, MAN, Scania.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title">Новости компании</h2>
+          <div class="swiper-container">
+            <div class="swiper swiper-news">
+              <div class="swiper-wrapper" id="news-wrapper"></div>
+            </div>
+            <img
+              class="swiper-button-prev"
+              src="./src/icons/btn-prev.svg"
+              alt="btn-prev"
+            />
+            <img
+              class="swiper-button-next"
+              src="./src/icons/btn-next.svg"
+              alt="btn-next"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <a href="/"
+            ><img
+              class="footer__logo"
+              src="./src/images/footer-logo.webp"
+              alt="logo"
+          /></a>
+          <h2 class="footer__title">Контакты</h2>
+        </div>
+        <div class="footer__items">
+          <nav class="footer__nav">
+            <div class="footer__links">
+              <a href="/" class="footer__link">О компании</a>
+              <a href="/" class="footer__link">Запчасти</a>
+              <a href="/" class="footer__link">Оплата и доставка</a>
+            </div>
+            <div class="footer__links">
+              <a href="/" class="footer__link">Акции</a>
+              <a href="/" class="footer__link">Новости</a>
+              <a href="/" class="footer__link">Контакты</a>
+            </div>
+          </nav>
+          <div class="footer__info">
+            <div class="footer__adres">
+              <h3 class="footer__adres-title">Офис</h3>
+              <div class="footer__adres-text">
+                <img src="./src/icons/map.svg" alt="map" />
+                <p>
+                  187021, Россия,  г. Санкт-Петербург, с/п Фёдоровское, ул.
+                  Почтовая , д. 51
+                </p>
+              </div>
+            </div>
+            <div class="footer__adres">
+              <h3 class="footer__adres-title">СТО</h3>
+              <div class="footer__adres-text">
+                <img src="./src/icons/map.svg" alt="footer__adres-icon" />
+                <p>
+                  187021, Россия,  г. Санкт-Петербург, с/п Фёдоровское, ул.
+                  Почтовая , д. 51
+                </p>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <a
+                class="footer__contact footer__link"
+                href="tel: +79117232133"
+                target="_blank"
+              >
+                <img src="./src/icons/telephone.svg" alt="telephone" />
+                <p>+7 (911) 723 21 33</p>
+              </a>
+              <a
+                class="footer__contact footer__link"
+                href="mailto: ddiesel2015@gmail.com"
+                target="_blank"
+              >
+                <img src="./src/icons/mail.svg" alt="mail" />
+                <p>ddiesel2015@gmail.com</p>
+              </a>
+              <div class="footer__contact footer__link">
+                <img src="./src/icons/calendar.svg" alt="calendar" />
+                <p>Пн-Пт: с 9.00 до 18.00<br />Сб-Вс: выходной</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer__item">
+            <h2 class="footer__title">Контакты</h2>
+            <div class="footer__adreses">
+ 
+             
+            </div>
+            <div class="footer__contacts">
+             
+   
+       
+            </div>
+          </div> -->
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/app/script.js"></script>
+  </body>
+</html>

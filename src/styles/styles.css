@@ -1,0 +1,14 @@
+@import "./config/layout.css";
+@import "./config/reset.css";
+@import "./config/config.css";
+@import "./config/variables.css";
+
+@import "./sections/header.css";
+@import "./sections/about.css";
+@import "./sections/news.css";
+@import "./sections/footer.css";
+
+@import "./blocks/link.css";
+@import "./blocks/swiper.css";
+@import "./blocks/card.css";
+@import "./blocks/menu.css";
