@@ -1,5 +1,9 @@
 body {
   color: black;
   font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
   background-color: var(--secondary);
+}
+img {
+  display: block;
 }

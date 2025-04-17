@@ -1,88 +1,119 @@
 .header__items {
   height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 10px;
+}
+
+.header__nav a,
+.header__item a {
+  padding: 0;
+  color: var(--primary);
+  transition: 0.3s all;
+}
+.header__nav a:hover,
+.header__item a:hover {
+  color: var(--accent);
+  transition: 0.3s all;
 }
 
 .header__logo {
-  max-width: 447.135px;
-  height: 44px;
+  width: 447.135px;
+  height: auto;
 }
 
 .header__links {
   max-width: 674px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   gap: 27px;
 }
 
 .header__nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 22px;
+  font-size: clamp(12px, 2vw, 22px);
   font-weight: 500;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  gap: 15px;
 }
 
 .header__form {
-  display: flex;
   height: 50px;
 }
+
 .header__input {
   position: relative;
   width: 100%;
   padding: 17px 17px 17px 50px;
   color: var(--primary);
+  font-size: 20px;
   border-radius: 7px 0px 0px 7px;
   border: 1px solid var(--primary);
 }
+
 .header__input::placeholder {
+  position: absolute;
+  padding-top: 6px;
   color: #a8aaa9;
+  font-size: 14px;
 }
 
-.header__form-icon {
+.header__input-icon {
   position: absolute;
   padding: 17px;
 }
-.header__form-button {
+
+.header__button {
   width: 140px;
   height: 50px;
   color: var(--secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 0px 7px 7px 0px;
   background: var(--primary);
+  transition: 0.3s all;
+}
+.header__button:hover {
+  color: var(--secondary);
+  background: var(--accent);
+  transition: 0.3s all;
 }
 
 .header__item {
-  display: flex;
-  flex-direction: column;
   gap: 25px;
 }
 
 .header__contacts {
-  display: flex;
-  flex-direction: column;
   gap: 3px;
 }
 
 .header__contact {
-  font-size: 16px;
   height: 20px;
-  display: flex;
   gap: 10px;
+  white-space: nowrap;
+  transition: 0.3s all;
+}
+.header__contact:hover path {
+  fill: var(--accent);
+  transition: 0.3s all;
 }
 
 .header__panels {
-  display: flex;
   gap: 30px;
 }
 
 .header__panels-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 3px;
+  transition: 0.3s all;
+}
+
+.header__panels-link:hover path {
+  stroke: var(--accent);
+  transition: 0.3s all;
+}
+
+@media (max-width: 1440px) {
+  .header__links {
+    gap: 10px;
+  }
+  .header__logo {
+    width: 300px;
+    min-width: 150px;
+
+  }
 }

@@ -1,43 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Компания d-diesel осуществляет диагностику и ремонт дизельных топливных систем в Санкт-Петербурге, занимается продажей запчастей для дизельных двигателей DETROIT, CUMMINS, CATERPILLAR, BOSCH, DELPHI"
+    />
+    <meta
+      name="keywords"
+      content="комплектующие для насос-форсунок, запчасти для насос-форсунок в санкт-петербурге, диагностика ремонт дизельных топливных систем, запчасти для насос-форсунок"
+    />
+    <!-- Google шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper (слайдер) -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="./favicon.png" />
-    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./favicon.png" sizes="180x180" />
     <link rel="stylesheet" href="./src/styles/styles.css" />
-    <title>D-Disel</title>
+    <title>D-Disel | Запчасти и комплектующие для насос-форсунок в СПб</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__items">
-          <a href="/"
-            ><img
-              class="header__logo"
-              src="./src/images/header-logo.webp"
-              alt="logo"
-          /></a>
-          <div class="header__links">
-            <nav class="header__nav">
+    <header class="header container">
+      <div
+        class="header__items d-flex justify-content-between align-items-center"
+      >
+        <a href="/"
+          ><img
+            class="header__logo img-fluid"
+            src="./src/images/header-logo.webp"
+            alt="logo"
+        /></a>
+        <div class="header__links d-flex flex-column">
+          <ul
+            class="header__nav nav d-flex justify-content-between align-items-center"
+          >
+            <li class="nav-item">
               <a
-                class="header__link link"
+                class="nav-link"
                 href="/"
                 id="navbarDropdown"
                 data-bs-toggle="dropdown"
@@ -49,47 +64,39 @@
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Detroit</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Поршни</a></li>
-                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Подкатегория 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Подкатегория 2</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Cummins</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Фильтры</a></li>
-                    <li><a class="dropdown-item" href="#">Насосы</a></li>
-                  </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">BOSCH</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Электроника</a></li>
-                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
-                  </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">DELPHI</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Рейлы</a></li>
-                    <li><a class="dropdown-item" href="#">Датчики</a></li>
-                  </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#"
                     >Caterpillar</a
                   >
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Головки</a></li>
-                    <li><a class="dropdown-item" href="#">Форсунки</a></li>
-                  </ul>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Акции</a>
                 </li>
               </ul>
-              <a href="/" class="header__link link">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Новости</a>
+            </li>
+            <li class="nav-item">
               <a
-                class="header__link link"
+                class="nav-link"
                 href="/"
                 id="navbarDropdown"
                 data-bs-toggle="dropdown"
@@ -111,71 +118,113 @@
                   <a class="dropdown-item" href="#">Сервис</a>
                 </li>
               </ul>
-              <a href="/" class="header__link link">Контакты</a>
-            </nav>
-            <form class="header__form">
-              <img
-                class="header__form-icon"
-                src="./src/icons/glass.svg"
-                alt="header-glass"
-              />
-              <input
-                class="header__input"
-                type="text"
-                placeholder="Введите номер двигателя, номер форсунки или номер детали"
-              />
-              <a href="/" class="header__form-button">Найти</a>
-            </form>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+          <form class="header__form d-flex">
+            <img
+              class="header__input-icon"
+              src="./src/icons/glass.svg"
+              alt="glass"
+            />
+            <input
+              class="header__input"
+              type="text"
+              placeholder="Введите номер двигателя, номер форсунки или номер детали"
+            />
+            <a
+              href="/"
+              class="header__button d-flex justify-content-center align-items-center"
+              >Найти</a
+            >
+          </form>
+        </div>
+        <div class="header__item d-flex flex-column">
+          <div class="header__contacts d-flex flex-column">
+            <a
+              class="header__contact d-flex"
+              href="https://wa.me/79117232133"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.0854 2.91005C16.1639 1.98415 15.0664 1.25002 13.8568 0.750414C12.6472 0.250812 11.3498 -0.00426316 10.0402 5.3895e-05C4.55276 5.3895e-05 0.0804022 4.45004 0.0804022 9.91003C0.0804022 11.66 0.542714 13.36 1.40704 14.86L0 20L5.27638 18.62C6.73367 19.41 8.37186 19.83 10.0402 19.83C15.5276 19.83 20 15.38 20 9.92003C20 7.27003 18.9648 4.78004 17.0854 2.91005ZM10.0402 18.15C8.55276 18.15 7.09548 17.75 5.81909 17L5.51759 16.82L2.38191 17.64L3.21608 14.6L3.01508 14.29C2.18849 12.9771 1.74967 11.4593 1.74874 9.91003C1.74874 5.37004 5.46734 1.67005 10.0301 1.67005C12.2412 1.67005 14.3216 2.53005 15.8794 4.09004C16.6509 4.8539 17.2622 5.76258 17.678 6.76336C18.0938 7.76415 18.3057 8.83712 18.3015 9.92003C18.3216 14.46 14.603 18.15 10.0402 18.15ZM14.5829 11.99C14.3317 11.87 13.1055 11.27 12.8844 11.18C12.6533 11.1 12.4925 11.06 12.3216 11.3C12.1508 11.55 11.6784 12.11 11.5377 12.27C11.397 12.44 11.2462 12.46 10.995 12.33C10.7437 12.21 9.9397 11.94 8.99497 11.1C8.25126 10.44 7.75879 9.63003 7.60804 9.38003C7.46734 9.13003 7.58794 9.00003 7.71859 8.87003C7.82914 8.76003 7.96985 8.58003 8.09045 8.44003C8.21105 8.30003 8.26131 8.19003 8.34171 8.03003C8.42211 7.86003 8.38191 7.72003 8.32161 7.60003C8.2613 7.48003 7.75879 6.26004 7.55779 5.76004C7.35678 5.28004 7.14573 5.34004 6.99497 5.33004H6.51256C6.34171 5.33004 6.0804 5.39004 5.84925 5.64004C5.62814 5.89004 4.98492 6.49004 4.98492 7.71003C4.98492 8.93003 5.8794 10.11 6 10.27C6.1206 10.44 7.75879 12.94 10.2513 14.01C10.8442 14.27 11.3065 14.42 11.6683 14.53C12.2613 14.72 12.804 14.69 13.2362 14.63C13.7186 14.56 14.7136 14.03 14.9146 13.45C15.1256 12.87 15.1256 12.38 15.0553 12.27C14.9849 12.16 14.8342 12.11 14.5829 11.99Z"
+                  fill="#000C6C"
+                />
+              </svg>
+              <p>+7 (911) 723 21 33</p></a
+            >
+            <a
+              class="header__contact d-flex"
+              href="https://wa.me/79117232133"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.0854 2.91005C16.1639 1.98415 15.0664 1.25002 13.8568 0.750414C12.6472 0.250812 11.3498 -0.00426316 10.0402 5.3895e-05C4.55276 5.3895e-05 0.0804022 4.45004 0.0804022 9.91003C0.0804022 11.66 0.542714 13.36 1.40704 14.86L0 20L5.27638 18.62C6.73367 19.41 8.37186 19.83 10.0402 19.83C15.5276 19.83 20 15.38 20 9.92003C20 7.27003 18.9648 4.78004 17.0854 2.91005ZM10.0402 18.15C8.55276 18.15 7.09548 17.75 5.81909 17L5.51759 16.82L2.38191 17.64L3.21608 14.6L3.01508 14.29C2.18849 12.9771 1.74967 11.4593 1.74874 9.91003C1.74874 5.37004 5.46734 1.67005 10.0301 1.67005C12.2412 1.67005 14.3216 2.53005 15.8794 4.09004C16.6509 4.8539 17.2622 5.76258 17.678 6.76336C18.0938 7.76415 18.3057 8.83712 18.3015 9.92003C18.3216 14.46 14.603 18.15 10.0402 18.15ZM14.5829 11.99C14.3317 11.87 13.1055 11.27 12.8844 11.18C12.6533 11.1 12.4925 11.06 12.3216 11.3C12.1508 11.55 11.6784 12.11 11.5377 12.27C11.397 12.44 11.2462 12.46 10.995 12.33C10.7437 12.21 9.9397 11.94 8.99497 11.1C8.25126 10.44 7.75879 9.63003 7.60804 9.38003C7.46734 9.13003 7.58794 9.00003 7.71859 8.87003C7.82914 8.76003 7.96985 8.58003 8.09045 8.44003C8.21105 8.30003 8.26131 8.19003 8.34171 8.03003C8.42211 7.86003 8.38191 7.72003 8.32161 7.60003C8.2613 7.48003 7.75879 6.26004 7.55779 5.76004C7.35678 5.28004 7.14573 5.34004 6.99497 5.33004H6.51256C6.34171 5.33004 6.0804 5.39004 5.84925 5.64004C5.62814 5.89004 4.98492 6.49004 4.98492 7.71003C4.98492 8.93003 5.8794 10.11 6 10.27C6.1206 10.44 7.75879 12.94 10.2513 14.01C10.8442 14.27 11.3065 14.42 11.6683 14.53C12.2613 14.72 12.804 14.69 13.2362 14.63C13.7186 14.56 14.7136 14.03 14.9146 13.45C15.1256 12.87 15.1256 12.38 15.0553 12.27C14.9849 12.16 14.8342 12.11 14.5829 11.99Z"
+                  fill="#000C6C"
+                />
+              </svg>
+              <p>+7 (911) 723 21 33</p></a
+            >
           </div>
-          <div class="header__item">
-            <div class="header__contacts">
-              <a
-                class="header__contact link"
-                href="https://wa.me/79117232133"
-                target="_blank"
+          <div class="header__panels d-flex">
+            <a
+              class="header__panels-link d-flex flex-column align-items-center"
+              href="/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
               >
-                <img
-                  width="20px"
-                  height="20px"
-                  src="./src/icons/whatsapp.svg"
-                  alt="header__tel"
+                <path
+                  d="M19 20C18.47 17.9915 17.2995 16.2174 15.6723 14.9519C14.0452 13.6863 12.0511 13 10 13C7.94888 13 5.95483 13.6863 4.32768 14.9519C2.70053 16.2174 1.52996 17.9915 1 20"
+                  stroke="#000C6C"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
                 />
-                <p>+7 (911) 723 21 33</p></a
+                <path
+                  d="M9.99995 12.9686C13.2857 12.9686 15.9493 10.2893 15.9493 6.98428C15.9493 3.67925 13.2857 1 9.99995 1C6.71425 1 4.05066 3.67925 4.05066 6.98428C4.05066 10.2893 6.71425 12.9686 9.99995 12.9686Z"
+                  stroke="#000C6C"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p>Войти</p>
+            </a>
+            <a class="header__panels-link d-flex flex-column align-items-center" href="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
               >
-              <a
-                class="header__contact link"
-                href="https://wa.me/79117232133"
-                target="_blank"
-              >
-                <img
-                  width="20px"
-                  height="20px"
-                  src="./src/icons/whatsapp.svg"
-                  alt="header__tel"
+                <path
+                  d="M18.2727 7.36364L12.8182 1M3.72727 7.36364L9.18182 1M7.36364 13.7273V18.2727M14.6364 13.7273V18.2727M11 13.7273V18.2727M1.90909 11H20.0909L18.2727 21H3.72727L1.90909 11ZM1 7.36364H21V11H1V7.36364Z"
+                  stroke="#000C6C"
+                  stroke-width="1.3"
                 />
-                <p>+7 (911) 723 21 33</p></a
-              >
-            </div>
-            <div class="header__panels">
-              <a class="header__panels-link link" href="/">
-                <img
-                  width="18px"
-                  height="19px"
-                  src="./src/icons/login.svg"
-                  alt="header__login"
-                />
-                <p>Войти</p>
-              </a>
-              <a class="header__panels-link link" href="/">
-                <img
-                  width="20px"
-                  height="20px"
-                  src="./src/icons/cart.svg"
-                  alt="header__cart"
-                />
-                <p>Корзина</p>
-              </a>
-            </div>
+              </svg>
+              <p>Корзина</p>
+            </a>
           </div>
         </div>
       </div>
